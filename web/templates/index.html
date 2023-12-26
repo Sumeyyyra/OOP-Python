@@ -1,0 +1,19 @@
+{% extends "sablon.html" %}
+{% block orta%}
+
+<div class="row">
+{%for i in range(2)%}
+<div class="card" style="margin-top:10px ;width: 18rem;">
+  <img src="{{url_for('static',filename='img/turuncu_maymun.png')}}" class="card-img-top" alt="...">
+  <div class="card-body">
+  		<center>
+		    <h5 class="card-title">{{urunler[i].urun}}</h5>
+		    <p class="card-text">{{urunler[i].fiyat}}</p>
+		    <a href="/satinal/{{i}}" class="btn btn-primary">Satın al</a>
+  		</center>
+	</div>
+</div>
+
+{% endfor %}
+</div>
+{% endblock%}
