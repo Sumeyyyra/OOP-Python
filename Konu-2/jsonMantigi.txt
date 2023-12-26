@@ -1,0 +1,32 @@
+JSON XML Nedir?
+
+
+xml json çıkana kadar çok popülerdi.
+Javascript nesne gösterimi
+
+json aslında verilerin daha hızlı transferleri ve farklı dbler için kolay erişim için oluşmuştur
+
+XML ORNEK:
+<menu id="file" value="File">
+  <popup>
+    <menuitem value="New" onclick="CreateNewDoc()" />
+    <menuitem value="Open" onclick="OpenDoc()" />
+    <menuitem value="Close" onclick="CloseDoc()" />
+  </popup>
+</menu>
+
+</rehber> Root sonu
+
+
+JSON ORNEK:
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
